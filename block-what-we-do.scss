@@ -1,0 +1,36 @@
+@media (min-width: 760px) and (max-width: 1920px) {
+.block-what-we-do{
+    @include flex-column();
+    gap: 15px;
+    h3{
+        font-size: $font-h3;
+        color: $color-main;
+        font-family: $font-family-main-semibold;
+    }
+    h1{
+        font-size: $font-h1;
+        color: $color-bold;
+        font-family: $font-family-big-semibold;
+    }
+}
+.what-we-do__buttons{
+    @include flex-row();
+    gap: $space-xs;
+    button{
+        background-color: $color-green;
+        color: $color-white;
+        font-family: $font-family-main-semibold;
+        font-size: $font-s;
+        border-radius: 20px;
+        width: 200px;
+        height: 46px;
+        border: none;
+        &:hover{
+            background-color: $color-white;
+            color: $color-green;
+            border: 4px solid $color-green;
+            cursor: pointer;
+        }
+    }
+}
+}

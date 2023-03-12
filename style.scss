@@ -1,0 +1,88 @@
+@import "_variables";
+@import "_reset";
+@import "_mixins";
+@import "block-what-we-do";
+@import "block-create";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@media (min-width: 760px) and (max-width: 1920px) {
+    body{
+        background-image: url('/img/dots.png');
+        background-position: top 760px left 5px;
+        background-repeat: no-repeat;
+    }
+    .body__wrapper {
+        padding: $space-m $space-l;
+    }
+    .block-header {
+        display: grid;
+        grid-template-columns: 0.35fr 2fr 0.35fr;
+        align-items: center;
+    // TODO: sticky
+    }
+    .header__logo{
+        img {
+            width: 150px;
+            height: 50px;
+        }
+    }
+    .header__nav-bar{
+        ul {
+            @include flex-row();
+            justify-content: space-evenly;
+        
+        }
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #nav1 {
+        a{
+            font-size: $font-s;
+            color: $color-main;
+            font-family: $font-family-main-semibold;
+            &:hover{
+                color: $color-green;
+                border: 3px solid $color-green;
+                border-radius: 20px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        }
+    
+    }
+
+
+    #nav2 {
+        @extend #nav1;
+    }
+    #nav3 {
+        @extend #nav1;
+    }
+    #nav4 {
+        @extend #nav1;
+    }
+    #nav5 {
+        @extend #nav1;
+    }
+    #nav6 {
+        @extend #nav1;
+    }
+    #nav7 {
+        @extend #nav1;
+    }
+    .header__authorization__button {
+        justify-self: end;
+        button{
+            background-color: $color-brown;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 15px 0 15px 0;
+            color: $color-white;
+            font-size: $font-s;
+            font-family: $font-family-main-semibold;
+        }
+    }
+    
+}

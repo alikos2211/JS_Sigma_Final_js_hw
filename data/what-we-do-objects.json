@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Interior design",
+        "objects": [
+            {
+                "title": "Interior Deisgn 1",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/sofa.png"
+            },
+            {
+                "title": "Interior Deisgn 2",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/sofa.png"
+            },
+            {
+                "title": "Interior Deisgn 3",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/sofa.png"
+            },
+            {
+                "title": "Interior Deisgn 4",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/sofa.png"
+            },
+            {
+                "title": "Interior Deisgn 5",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/sofa.png"
+            }
+        ]
+    },
+    {
+        "name": "Architecture",
+        "objects": [
+            {
+                "title": "Architecture 1",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/bell.png"
+            },
+            {
+                "title": "Architecture 2",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/bell.png"
+            },
+            {
+                "title": "Architecture 2",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/bell.png"
+            },
+            {
+                "title": "Arhicitecture 4",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/bell.png"
+            },
+            {
+                "title": "Architecture 5",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/bell.png"
+            }
+        ]
+    },
+    {
+        "name": "Planning",
+        "objects": [
+            {
+                "title": "Planning 1",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/planning.png"
+            },
+            {
+                "title": "Planning 2",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/planning.png"
+            },
+            {
+                "title": "Planning 3",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/planning.png"
+            },
+            {
+                "title": "Planning 4",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/planning.png"
+            },
+            {
+                "title": "Planning 5",
+                "description": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+                "img": "img/planning.png"
+            }
+        ]
+    }
+]

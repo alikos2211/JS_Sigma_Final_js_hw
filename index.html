@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decbase</title>
 
-    <link rel="stylesheet" href="style/style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style/dist/style.css">
+    <script src="script/script.js"></script>
 
 </head>
-<body>
-    <div class="body__wrapper">
 
-        <div class="block-header" id="myHeader">
+<body>
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="block block-header">
+        <div class="header-main">
             <div class="header__logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
             <div class="header__nav-bar">
                 <nav>
                     <ul class="menu__box">
-                        <li id="nav1"><a class="menu__item" href="#">HOME</a></li>
-                        <li id="nav2"><a class="menu__item" href="#project">PROJECT</a></li>
-                        <li id="nav3"><a class="menu__item" href="#services">SERVICES</a></li>
-                        <li id="nav4"><a class="menu__item" href="#about">ABOUT</a></li>
-                        <li id="nav5"><a class="menu__item" href="#blog">BLOG</a></li>
-                        <li id="nav6"><a class="menu__item" href="#shop">SHOP</a></li>
-                        <li id="nav7"><a class="menu__item" href="#contact">CONTACT</a></li>
+                        <li><a class="menu__item" href="#">HOME</a></li>
+                        <li><a class="menu__item" href="#project">PROJECT</a></li>
+                        <li><a class="menu__item" href="#services">SERVICES</a></li>
+                        <li><a class="menu__item" href="#about">ABOUT</a></li>
+                        <li><a class="menu__item" href="#blog">BLOG</a></li>
+                        <li><a class="menu__item" href="#shop">SHOP</a></li>
+                        <li><a class="menu__item" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,219 +54,316 @@
                 <button>Sign Up</button>
             </div>
         </div>
-
-        <div class="block-create" id="project">
-            <div class="block-create-left">
-                <h3>MODERN INTERIOR</h3>
-                <h1>Create Your Interior Design.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation.</p>
-                <button>CONTACT</button>
-            </div>
-            <div class="block-create-right">
-                <img id="create-photo" src="img/block-create.png">
-                <img id="create-shape" src="img/create-photo-shape.png">
-            </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-indicator"></div>
         </div>
+    </div>
 
-        <div class="block-what-we-do-top" id="services" >
-            <h3 >WHAT WE DO</h3>
-            <h1>Our Service </h1>
-            <div class="what-we-do__buttons">
-                <button id="all">ALL</button>
-                <button id="interior">INTERIOR DESIGN</button>
-                <button id="architecture">ARCHITECTURE</button>
-                <button id="planning">PLANNING</button>
-            </div>
-        </div>  
-        <div class="what-we-do-bottom">
-            <div class="menu1-1">
-                <img src="img/sofa.png">
-                <h2>Interior Design1</h2>
-                <p>Lorem ipsum dolor amet consectetur
-                    adipiscing elit sed eiusmod tempor
-                    incididunt ut labore.</p>
-            </div>
-            <div class="menu1-2">
-                <img src="img/bell.png">
-                <h2>Architecture 1</h2>
-                <p>Lorem ipsum dolor amet consectetur
-                    adipiscing elit sed eiusmod tempor
-                    incididunt ut labore.</p>
-            </div>
-            <div class="menu1-3">
-                <img src="img/planning.png">
-                <h2>Planning 1</h2>
-                <p>Lorem ipsum dolor amet consectetur
-                    adipiscing elit sed eiusmod tempor
-                    incididunt ut labore.</p>
-            </div>
+    <div class="block block-create" id="project">
+        <div class="block-create-left">
+            <h3>Modern interior</h3>
+            <h1>Create Your Interior Design.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation.</p>
+            <button>Contact</button>
         </div>
-       
-        <div class="block-about-us" id="about">
-            <div class="about-us-left">
-                <img src="img/about-us-photo.png" id="about-us-photo">
-                <img src="img/create-photo-shape.png" id="about-us-shape">
-            </div>
-            <div class="about-us-right">
-                <h3>ABOUT US</h3>
-                <h1>Interioris The Will
-                    of An Epoch Mextreo</h1>
-                <p>There are many variations of passages of Lorem Ipsum available,
-                    but the majority have suffered alteration in some form injected
-                    humour, or randomised words which don't look even slightly
-                    believable.If you are going to use a passage of Lorem Ipsum,
-                    sure there isn't anything embarrassing hidden the middleof text.
-                    All the Lorem Ipsum generators on the Internettend to repeat
-                    predefined chunks as necessary,making this the first true
-                    generator on the Internet.</p>
-                <button>LEARN MORE</button>
-            </div>
+        <div class="block-create-right">
+            <img id="create-photo" src="img/block-create.png">
+            <img id="create-shape" src="img/create-photo-shape.png">
         </div>
-        <img src="img/about-us-dots.png">
+    </div>
 
+    <div class="block block-what-we-do-top" id="services">
+        <h3>What we do</h3>
+        <h1>Our Service </h1>
+        <div class="what-we-do__buttons" id="what-we-do-menu">
+        </div>
+    </div>
+    <div class="block what-we-do-bottom" id="block-what-we-do-bottom"></div>
 
-        <div class="block-20years" >
-            <div class="block-20years-left">
-                <img src="img/twenty.png" alt="twenty">
-                <h1>Years Of Successful
-                    Working
-                    The Market
-                </h1>
-                <button>READ MORE</button>
+    <div class="block block-about-us" id="about">
+        <div class="about-us-left">
+            <img src="img/about-us-photo.png" id="about-us-photo">
+            <img src="img/create-photo-shape.png" id="about-us-shape">
+        </div>
+        <div class="about-us-right">
+            <h3>About us</h3>
+            <h1>Interioris The Will
+                of An Epoch Mextreo</h1>
+            <p>There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form injected
+                humour, or randomised words which don't look even slightly
+                believable.If you are going to use a passage of Lorem Ipsum,
+                sure there isn't anything embarrassing hidden the middleof text.
+                All the Lorem Ipsum generators on the Internettend to repeat
+                predefined chunks as necessary,making this the first true
+                generator on the Internet.</p>
+            <button>Learn more</button>
+        </div>
+    </div>
+    <img src="img/about-us-dots.png">
+
+    <div class="block block-20years">
+        <div class="block-20years-left">
+            <img src="img/twenty.png" alt="twenty">
+            <h1>Years Of Successful
+                Working
+                The Market
+            </h1>
+            <button>Read more</button>
+        </div>
+        <div class="block-20years-right">
+            <img src="img/lights.png" alt="lights" id="years-photo">
+            <img src="img/create-photo-shape.png" id="years-shape">
+        </div>
+    </div>
+
+    <div class="block block-graphics">
+        <h1>3000+ Completed Work
+            Which WE have Successfully Done
+        </h1>
+        <div class="block-graphics-bottom">
+            <div class="collection">
+                <div class="collection-text">
+                    <h1>980</h1>
+                    <p>Project</p>
+                </div>
+                <img src="img/white_Rectangle.png" alt="White shape" class="white_shape">
             </div>
-            <div class="block-20years-right">
-                <img src="img/lights.png" alt="lights" id="years-photo">
-                <img src="img/create-photo-shape.png" id="years-shape">
+            <img src="img/Vector_line.png" class="line" alt="vector line">
+            <div class="collection">
+                <div class="collection-text">
+                    <h1>520</h1>
+                    <p>Happy Client</p>
+                </div>
+                <img src="img/white_Rectangle.png" alt="White shape" class="white_shape">
+            </div>
+            <img src="img/Vector_line_opposite.png" class="line" alt="vector line">
+            <div class="collection">
+                <div class="collection-text">
+                    <h1>330</h1>
+                    <p>Winners</p>
+                </div>
+                <img src="img/white_Rectangle.png" alt="White shape" class="white_shape">
+            </div>
+            <img src="img/Vector_line.png" class="line" alt="vector line">
+            <div class="collection">
+                <div class="collection-text">
+                    <h1>120</h1>
+                    <p>Recoment</p>
+                </div>
+                <img src="img/white_Rectangle.png" alt="White shape" class="white_shape">
             </div>
         </div>
     </div>
-        <div class="block-graphics body__wrapper">
-            <h1>3000+ Completed Work
-                Which WE have Successfully Done
-            </h1>
-            <div class="block-graphics-bottom">
-                <div class="collection1">
-                    <div class="collection-text1">
-                        <h1>980</h1>
-                        <p>Project</p>
+    <div class="block block-testimonials" id="block-testimonials">
+        <div class="testimonials-text">
+            <h3>TESTIMONIALS</h3>
+            <h1>Client says about us</h1>
+        </div>
+        <div class="carousel-buttons">
+            <button class="slide-arrow" id="slide-arrow-prev">
+                &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+                &#8250;
+            </button>
+        </div>
+        <div class="testimonials__carousel" id="testimonials-carousel">
+            <div class="testimonial-pair">
+                <div class="testimonial">
+                    <div class="person-div">
+                        <img src="img/man.jpeg" id="person">
                     </div>
-                    <img src="img/white_Rectangle.png" alt="White shape" id="white_shape">
-                </div>
-                <img src="img/Vector_line.png" alt="vector line">
-                <div class="collection2">
-                    <div class="collection-text2">
-                        <h1>520</h1>
-                        <p>Happy Client</p>
+
+                    <div class="card">
+                        <h2>
+                            <span>Louis Saville </span>
+                            <span>/CEO at Google inc</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img src="img/quote.png" class="quote">
                     </div>
-                    <img src="img/white_Rectangle.png" alt="White shape" id="white_shape2">
                 </div>
-                <img src="img/Vector_line_opposite.png" alt="vector line">
-                <div class="collection3">
-                    <div class="collection-text3">
-                        <h1>330</h1>
-                        <p>Winners</p>
+                <div class="testimonial">
+                    <div class="person-div">
+                        <img src="img/woman.jpeg" id="person">
                     </div>
-                    <img src="img/white_Rectangle.png" alt="White shape" id="white_shape">
-                </div>
-                <img src="img/Vector_line.png" alt="vector line">
-                <div class="collection4">
-                    <div class="collection-text4">
-                        <h1>120</h1>
-                        <p>Recoment</p>
+
+                    <div class="card">
+                        <h2>
+                            <span>Rekha Varadwaz </span>
+                            <span>/Manager at Nike inc Saville</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img src="img/quote.png" class="quote">
                     </div>
-                    <img src="img/white_Rectangle.png" alt="White shape" id="white_shape4">
+                </div>
+            </div>
+            <div class="testimonial-pair">
+                <div class="testimonial">
+                    <div class="person-div">
+                        <img src="img/woman.jpeg" id="person">
+                    </div>
+
+                    <div class="card">
+                        <h2>
+                            <span>SMB2 </span>
+                            <span>/Manager at Nike inc Saville</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img src="img/quote.png" class="quote">
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="person-div">
+                        <img src="img/man.jpeg" id="person">
+                    </div>
+
+                    <div class="card">
+                        <h2>
+                            <span>SMB2 </span>
+                            <span>/CEO at Google inc</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img src="img/quote.png" class="quote">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-pair">
+                <div class="testimonial">
+                    <div class="person-div">
+                        <img src="img/man.jpeg" id="person">
+                    </div>
+
+                    <div class="card">
+                        <h2>
+                            <span>SMB3 </span>
+                            <span>/CEO at Google inc</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img src="img/quote.png" class="quote">
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="person-div">
+                        <img src="img/woman.jpeg" id="person">
+                    </div>
+
+                    <div class="card">
+                        <h2>
+                            <span>SMB3 </span>
+                            <span>/Manager at Nike inc Saville</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <img src="img/quote.png" class="quote">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="block-testimonials body__wrapper">
-            <div class="testimonials-text">
-                <h3>TESTIMONIALS</h3>
-                <h1>Client says about us</h1>
-            </div>
-            <div class="testimonials__carousel">
+    </div>
 
+    <div class="block block-latest" id="blog">
+        <div class="latest-top">
+            <h3>Latest news</h3>
+            <h1>From Our Blog</h1>
+        </div>
+        <div class="latest-bottom">
+            <div class="latest-block reveal">
+                <img src="img/letest-left.png" class="image-latest">
+                <img src="img/create-photo-shape.png" class="shape-latest">
+                <h1>2020 Interior Design Trends</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <button>Continue reading....</button>
+            </div>
+            <div class="latest-block reveal">
+                <img src="img/letest-right.png" class="image-latest">
+                <img src="img/create-photo-shape.png" class="shape-latest">
+                <h1>28 Notable Product at ARC Interior Design</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <button>Continue reading....</button>
             </div>
         </div>
-    
-        <div class="block-letest body__wrapper" id="blog">
-            <div class="letest-top">
-                <h3>LETEST NEWS</h3>
-                <h1>From Our Blog</h1>
-            </div>
-            <div class="letest-bottom">
-                <div class="letest-bottom-left">
-                    <img src="img/letest-left.png" id="image-letest">
-                    <img src="img/create-photo-shape.png" id="shape-letest">
-                    <h1>2020 Interior Design Trends</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        incididunt ut labore et dolore magna aliqua.</p>
-                    <button>CONTINUE READING....</button>
-                </div>
-                <div class="letest-bottom-right">
-                    <img src="img/letest-right.png" id="image-letest">
-                    <img src="img/create-photo-shape.png" id="shape-letest">
-                    <h1>28 Notable Product at ARC Interior Design</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        incididunt ut labore et dolore magna aliqua.</p>
-                    <button>CONTINUE READING....</button>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <div class="block-form" id="contact">
-            <div class="form-text">
-                <h1>DON'T FORGET TO SIGN UP</h1>
-                <img src="img/Line-form.png" alt="line">
-                <p>Find out early about all upcoming promotions and new product releases with
-                    our newsletter.</p>
-            </div>
-            <div class="form-form">
-                <form action="#">
-                    <input type="text" id="name" name="name" value="Enter your name.....">
-                    <input type="text" id="surname" name="surname" value="Enter your surname....."><br>
-                    <input type="text" id="email" name="email" value="Enter your e-mail....."><br>
-                    <input type="submit" value="SUBSCRIBE" id="btn-form">
-                </form>
-            </div>
+    <div class="block block-form" id="contact">
+        <div class="form-text">
+            <h1>Don't forget to sign up</h1>
+            <img src="img/Line-form.png" alt="line">
+            <p>Find out early about all upcoming promotions and new product releases with
+                our newsletter.</p>
         </div>
-
-        <div class="block-footer">
-            <img src="img/logo.png" alt="logo" id="logo">
-            <h3>Quick Links</h3>
-            <h3>Company</h3>
-            <h3>Contact us</h3>
-            <h3>Follow us</h3>
-            <p>But i must explain to you all this mistaken
-                <br>idea of dencouncing pleasure.
-            </p>
-            <p>About Our Company</p>
-            <p>About Company</p>
-            <p>Sagrada Familia, Herba</p>
-            <div class="socials">
-                <div class="facebook-shape"> <a href="https://uk-ua.facebook.com/"><img src="img/facebook.png" alt="facebook" id="facebook"></a></div> 
-                <div class="twitter-shape"><a href="https://twitter.com/?lang=ru"><img src="img/twitter.png" alt="twitter" id="twitter"></a></div>
-                <div class="instagram-shape"><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram" id="instagram"></a></div> 
-                <div class="linkedin-shape"><a href="https://www.linkedin.com/feed/"><img src="img/linkedin.png" alt="linkedin" id="linkedin"></a></div>
-                
-            </div>
-            <p id="services">Services WE provide</p>
-            <p>Our Testimonials</p>
-            <p>Street Front USA</p>
-            <p id="career">Career & Opportunity</p>
-            <p id="news">Latest News</p>
-            <p>brandoxide@gmail.com</p>
-            <p id="privacy">Privacy & policy</p>
-            <p id="our"> Our misson</p>
-            <p>002-568423591</p>
-            <p id="contact">Contact US</p>
-            <p id="get"> Get a free Quot</p>
+        <div id="weather">
+            <h3>BTW here's the weather in Kharkiv!</h3>
+            <p></p>
         </div>
-<footer>
-    <hr>
-    <p>Copyright @ 2020 Brandoxide.all right reserved.</p>
-</footer>       
+        <div class="congrats-message">
+            <p></p>
+        </div>
+        <div class="form-form" id="form">
+            <form action="#">
+                <input type="text" id="name" name="name" placeholder="Enter your name.....">
+                <input type="text" id="surname" name="surname" placeholder="Enter your surname....."><br>
+                <input type="text" id="email" name="email" placeholder="Enter your e-mail....."><br>
+                <input type="submit" value="SUBSCRIBE" id="btn-form">
+            </form>
+        </div>
+    </div>
 
+    <div class="block block-footer">
+        <img src="img/logo.png" alt="logo" id="logo">
+        <h3>Quick Links</h3>
+        <h3>Company</h3>
+        <h3>Contact us</h3>
+        <h3>Follow us</h3>
+        <p>But i must explain to you all this mistaken
+            <br>idea of dencouncing pleasure.
+        </p>
+        <p>About Our Company</p>
+        <p>About Company</p>
+        <p>Sagrada Familia, Herba</p>
+        <div class="socials">
+            <div class="facebook-shape"> <a href="https://uk-ua.facebook.com/"><img src="img/facebook.png"
+                        alt="facebook" id="facebook"></a></div>
+            <div class="twitter-shape"><a href="https://twitter.com/?lang=ru"><img src="img/twitter.png" alt="twitter"
+                        id="twitter"></a></div>
+            <div class="instagram-shape"><a href="https://www.instagram.com/"><img src="img/instagram.png"
+                        alt="instagram" id="instagram"></a></div>
+            <div class="linkedin-shape"><a href="https://www.linkedin.com/feed/"><img src="img/linkedin.png"
+                        alt="linkedin" id="linkedin"></a></div>
+
+        </div>
+        <p id="services">Services WE provide</p>
+        <p>Our Testimonials</p>
+        <p>Street Front USA</p>
+        <p id="career">Career & Opportunity</p>
+        <p id="news">Latest News</p>
+        <p>brandoxide@gmail.com</p>
+        <p id="privacy">Privacy & policy</p>
+        <p id="our"> Our misson</p>
+        <p>002-568423591</p>
+        <p id="contact">Contact US</p>
+        <p id="get"> Get a free Quot</p>
+    </div>
+    <footer>
+        <hr>
+        <p>Copyright @ <span class="current-year" /></span> Brandoxide.all right reserved.</p>
+    </footer>
 </body>
+
 </html>

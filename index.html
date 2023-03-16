@@ -7,12 +7,13 @@
     <title>Decbase</title>
 
     <link rel="stylesheet" href="style/style.css">
+    <script src="script.js"></script>
 
 </head>
 <body>
     <div class="body__wrapper">
 
-        <div class="block-header">
+        <div class="block-header" id="myHeader">
             <div class="header__logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
@@ -20,12 +21,12 @@
                 <nav>
                     <ul class="menu__box">
                         <li id="nav1"><a class="menu__item" href="#">HOME</a></li>
-                        <li id="nav2"><a class="menu__item" href="#">PROJECT</a></li>
-                        <li id="nav3"><a class="menu__item" href="#">SERVICES</a></li>
-                        <li id="nav4"><a class="menu__item" href="#">ABOUT</a></li>
-                        <li id="nav5"><a class="menu__item" href="#">BLOG</a></li>
-                        <li id="nav6"><a class="menu__item" href="#">SHOP</a></li>
-                        <li id="nav7"><a class="menu__item" href="#">CONTACT</a></li>
+                        <li id="nav2"><a class="menu__item" href="#project">PROJECT</a></li>
+                        <li id="nav3"><a class="menu__item" href="#services">SERVICES</a></li>
+                        <li id="nav4"><a class="menu__item" href="#about">ABOUT</a></li>
+                        <li id="nav5"><a class="menu__item" href="#blog">BLOG</a></li>
+                        <li id="nav6"><a class="menu__item" href="#shop">SHOP</a></li>
+                        <li id="nav7"><a class="menu__item" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,7 +35,7 @@
             </div>
         </div>
 
-        <div class="block-create">
+        <div class="block-create" id="project">
             <div class="block-create-left">
                 <h3>MODERN INTERIOR</h3>
                 <h1>Create Your Interior Design.</h1>
@@ -49,8 +50,8 @@
             </div>
         </div>
 
-        <div class="block-what-we-do-top">
-            <h3>WHAT WE DO</h3>
+        <div class="block-what-we-do-top" id="services" >
+            <h3 >WHAT WE DO</h3>
             <h1>Our Service </h1>
             <div class="what-we-do__buttons">
                 <button id="all">ALL</button>
@@ -58,7 +59,7 @@
                 <button id="architecture">ARCHITECTURE</button>
                 <button id="planning">PLANNING</button>
             </div>
-        </div>    
+        </div>  
         <div class="what-we-do-bottom">
             <div class="menu1-1">
                 <img src="img/sofa.png">
@@ -83,7 +84,7 @@
             </div>
         </div>
        
-        <div class="block-about-us">
+        <div class="block-about-us" id="about">
             <div class="about-us-left">
                 <img src="img/about-us-photo.png" id="about-us-photo">
                 <img src="img/create-photo-shape.png" id="about-us-shape">
@@ -106,7 +107,7 @@
         <img src="img/about-us-dots.png">
 
 
-        <div class="block-20years">
+        <div class="block-20years" >
             <div class="block-20years-left">
                 <img src="img/twenty.png" alt="twenty">
                 <h1>Years Of Successful
@@ -169,7 +170,7 @@
             </div>
         </div>
     
-        <div class="block-letest body__wrapper">
+        <div class="block-letest body__wrapper" id="blog">
             <div class="letest-top">
                 <h3>LETEST NEWS</h3>
                 <h1>From Our Blog</h1>
@@ -194,7 +195,7 @@
             </div>
         </div>
 
-        <div class="block-form">
+        <div class="block-form" id="contact">
             <div class="form-text">
                 <h1>DON'T FORGET TO SIGN UP</h1>
                 <img src="img/Line-form.png" alt="line">
@@ -213,45 +214,39 @@
 
         <div class="block-footer">
             <img src="img/logo.png" alt="logo" id="logo">
-
             <h3>Quick Links</h3>
             <h3>Company</h3>
             <h3>Contact us</h3>
-            <h3>Follow</h3>
-
+            <h3>Follow us</h3>
             <p>But i must explain to you all this mistaken
-                idea of dencouncing pleasure.
+                <br>idea of dencouncing pleasure.
             </p>
-            
             <p>About Our Company</p>
             <p>About Company</p>
             <p>Sagrada Familia, Herba</p>
-
-            <p>Services WE provide</p>
+            <div class="socials">
+                <div class="facebook-shape"> <a href="https://uk-ua.facebook.com/"><img src="img/facebook.png" alt="facebook" id="facebook"></a></div> 
+                <div class="twitter-shape"><a href="https://twitter.com/?lang=ru"><img src="img/twitter.png" alt="twitter" id="twitter"></a></div>
+                <div class="instagram-shape"><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram" id="instagram"></a></div> 
+                <div class="linkedin-shape"><a href="https://www.linkedin.com/feed/"><img src="img/linkedin.png" alt="linkedin" id="linkedin"></a></div>
+                
+            </div>
+            <p id="services">Services WE provide</p>
             <p>Our Testimonials</p>
             <p>Street Front USA</p>
-
-            <p>Career & Opportunity</p>
-            <p>Latest News</p>
+            <p id="career">Career & Opportunity</p>
+            <p id="news">Latest News</p>
             <p>brandoxide@gmail.com</p>
-
-            <p>Privacy & policy</p>
-            <p> Our misson</p>
+            <p id="privacy">Privacy & policy</p>
+            <p id="our"> Our misson</p>
             <p>002-568423591</p>
-
-            <p>Contact US</p>
-            <p> Get a free Quot</p>
-            
-            <div class="socials">
-                <img>
-                <img>
-                <img>
-                <img>
-            </div>
-                
-
+            <p id="contact">Contact US</p>
+            <p id="get"> Get a free Quot</p>
         </div>
-       
+<footer>
+    <hr>
+    <p>Copyright @ 2020 Brandoxide.all right reserved.</p>
+</footer>       
 
 </body>
 </html>

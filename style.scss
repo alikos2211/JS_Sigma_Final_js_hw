@@ -12,17 +12,21 @@
         background-image: url('/img/dots.png') ;
         background-position: top 760px left 5px;
         background-repeat: no-repeat;
+        scroll-behavior: smooth;
+        background-color: $color-white;
+        z-index: 2;
     }
     .body__wrapper {
         padding: $space-m $space-l;
     }
 
-    // TODO: sticky
  .block-header {
     display: grid;
     grid-template-columns: 0.35fr 2fr 0.35fr;
     align-items: center;
-
+    position: sticky; 
+    top: 0;
+    
 }
     .header__logo{
         img {
@@ -563,9 +567,99 @@
         .block-footer{
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+           
+            gap: $space-xxs;
+            @extend .body__wrapper;
             #logo{
                 width: 150px;
                 height: 47px;
+            }
+           #services{
+                grid-column: 2;
+            }
+            #news{
+                grid-column: 3;
+            }
+            #our{
+                grid-column: 3;
+            }
+            #get{
+                grid-column: 3;
+            }
+            #career{
+                grid-column: 2;
+            }
+            #privacy{
+                grid-column: 2;
+            }
+            #contact{
+                grid-column: 2;
+            }
+            h3{
+                color: $color-bold;
+                font-size: $font-h3;
+                font-family: $font-family-main-semibold;
+            }
+            p{
+                color: $color-main;
+                font-size: $font-p;
+                font-family: $font-family-main-semibold;
+            }
+        }
+        .socials{
+            grid-column: 5;
+            grid-row: 2;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            justify-content: space-around;
+            #facebook{
+                width: 19px;
+                height: 23px;
+                display: block;
+                margin: auto;
+                margin-top: 25%;
+            }
+            #twitter{
+                @extend #facebook ;
+            }
+            #instagram{
+                @extend #facebook ;
+            }
+            #linkedin{
+                @extend #facebook ;
+            }
+        }
+        .facebook-shape{
+            background-color: $color-socials;
+            border-radius: 50%;
+            width: 37px;
+            height: 37px;
+            &:hover{
+                background-color: $color-green;
+            }
+        }
+        .twitter-shape{
+            @extend .facebook-shape;
+        }
+        .instagram-shape{
+           @extend .facebook-shape;
+        }
+        .linkedin-shape{
+            @extend .facebook-shape;
+         }
+
+        footer{
+            padding-bottom: $space-xxs;
+            hr{
+                color: $color-main;
+            }
+            p{
+                color: $color-main;
+                font-size: $font-p;
+                font-family: $font-family-main-semibold;
+                text-align: center;
             }
         }
 

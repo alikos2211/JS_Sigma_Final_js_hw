@@ -175,7 +175,7 @@
         position: sticky;
         top: 0;
         z-index: 5;
-        padding: 0;
+        padding: 0 !important;
 
         .header-main {
             display: grid;
@@ -277,7 +277,6 @@
                 height: 600px;
                 border-radius: 140px 0 140px 0;
                 z-index: 1;
-                position: absolute;
             }
 
             #create-shape {
@@ -441,7 +440,7 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: 1;
-                position: absolute;
+                position: relative;
             }
 
             #about-us-shape {
@@ -449,7 +448,7 @@
                 width: 90%;
                 height: 100%;
                 bottom: 1rem;
-                right: 6rem;
+                right: 2rem;
             }
         }
 

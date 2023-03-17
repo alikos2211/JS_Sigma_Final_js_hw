@@ -2,4 +2,98 @@
     .block-graphics {
         display: none;
     }
+
+    .block {
+        padding: $space-m $space-s;
+    }
+
+    .block-create {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: $space-m;
+
+        .block-create-left {
+            align-items: stretch;
+            width: 100%;
+        }
+
+        .block-create-right {
+            width: 100%;
+            height: auto;
+
+            img {
+                width: 100% !important;
+                height: auto;
+            }
+        }
+    }
+
+    .block-what-we-do-top {
+        align-items: center;
+    }
+
+    .what-we-do-bottom {
+        position: relative;
+        width: 80vw;
+        margin: auto;
+        padding: 0;
+        gap: 0;
+
+        .what-we-do-section {
+            gap: $space-xs;
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+
+            padding: $space-xs;
+
+            .what-we-do-card {
+                position: relative;
+                width: 100%;
+            }
+        }
+    }
+
+    .block-about-us {
+        flex-direction: column-reverse;
+        align-items: stretch;
+
+        gap: $space-m;
+
+        .about-us-left {
+            align-items: stretch;
+            width: 100%;
+            padding: 0;
+
+            img {
+                width: 100% !important;
+                height: auto;
+            }
+        }
+
+        .about-us-right {
+            width: 100%;
+            height: auto;
+            padding: 0;
+        }
+    }
+
+    .block-testimonials {
+        .carousel-buttons {
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .testimonials__carousel {
+            width: 100vw;
+        }
+    }
+
+    .testimonial-pair {
+        flex-direction: column !important;
+    }
 }

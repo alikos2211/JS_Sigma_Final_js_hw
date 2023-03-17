@@ -180,7 +180,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 5;
-    padding: 0;
+    padding: 0 !important;
   }
   .block-header .header-main {
     display: grid;
@@ -267,7 +267,6 @@ body {
     height: 600px;
     border-radius: 140px 0 140px 0;
     z-index: 1;
-    position: absolute;
   }
   .block-create .block-create-right #create-shape {
     top: 1rem;
@@ -405,14 +404,14 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     z-index: 1;
-    position: absolute;
+    position: relative;
   }
   .block-about-us .about-us-left #about-us-shape {
     position: absolute;
     width: 90%;
     height: 100%;
     bottom: 1rem;
-    right: 6rem;
+    right: 2rem;
   }
   .block-about-us .about-us-right {
     display: flex;
@@ -845,5 +844,78 @@ body {
 @media only screen and (max-width: 760px) {
   .block-graphics {
     display: none;
+  }
+  .block {
+    padding: 104px 96px;
+  }
+  .block-create {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 104px;
+  }
+  .block-create .block-create-left {
+    align-items: stretch;
+    width: 100%;
+  }
+  .block-create .block-create-right {
+    width: 100%;
+    height: auto;
+  }
+  .block-create .block-create-right img {
+    width: 100% !important;
+    height: auto;
+  }
+  .block-what-we-do-top {
+    align-items: center;
+  }
+  .what-we-do-bottom {
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    padding: 0;
+    gap: 0;
+  }
+  .what-we-do-bottom .what-we-do-section {
+    gap: 48px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+  }
+  .what-we-do-bottom .what-we-do-section .what-we-do-card {
+    position: relative;
+    width: 100%;
+  }
+  .block-about-us {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 104px;
+  }
+  .block-about-us .about-us-left {
+    align-items: stretch;
+    width: 100%;
+    padding: 0;
+  }
+  .block-about-us .about-us-left img {
+    width: 100% !important;
+    height: auto;
+  }
+  .block-about-us .about-us-right {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .block-testimonials .carousel-buttons {
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+    justify-content: center;
+  }
+  .block-testimonials .testimonials__carousel {
+    width: 100vw;
+  }
+  .testimonial-pair {
+    flex-direction: column !important;
   }
 }/*# sourceMappingURL=style.css.map */

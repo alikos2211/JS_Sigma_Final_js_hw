@@ -964,9 +964,7 @@
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
         align-items: center;
         padding: 0 $space-s;
-
         gap: $space-xxs;
-
         #logo {
             width: 150px;
             height: 47px;
@@ -974,37 +972,88 @@
 
         #services {
             grid-column: 2;
+            grid-row: 3;
         }
 
         #news {
             grid-column: 3;
+            grid-row: 4;
         }
 
         #our {
             grid-column: 3;
+            grid-row: 5;
         }
 
         #get {
             grid-column: 3;
+            grid-row: 6;
         }
 
         #career {
             grid-column: 2;
+            grid-row: 4;
         }
 
         #privacy {
             grid-column: 2;
+            grid-row: 5;
         }
 
         #contact {
             grid-column: 2;
+            grid-row: 6;
+        }
+        #but{
+            grid-column: 1;
+            grid-row: 2;
+        }
+        #about-our{
+            grid-column: 2;
+            grid-row: 2;
+        }
+        #company{
+            grid-column: 3;
+            grid-row: 1;
+        }
+        #about-company{
+            grid-column: 3;
+            grid-row: 2;
+        }
+        #our-testimonials{
+            grid-column: 3;
+            grid-row: 3;
+        }
+        #contactUs{
+            grid-column: 4;
+            grid-row: 1;
+        }
+        #Sagrada{
+            grid-column: 4;
+            grid-row: 2;
+        }
+        #Street{
+            grid-column: 4;
+            grid-row: 3;
+        }
+        #brandoxide{
+            grid-column: 4;
+            grid-row: 4;
+        }
+        #phone{
+            grid-column: 4;
+            grid-row: 5;
+        }
+        #follow{
+            grid-column: 5;
+            grid-row: 1;
         }
 
         h3 {
             color: $color-bold;
-        }
+        } 
     }
-
+   
     .socials {
         grid-column: 5;
         grid-row: 2;

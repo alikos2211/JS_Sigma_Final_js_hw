@@ -43,7 +43,6 @@
             }
 
             .menu__box {
-                display: none !important;
                 position: absolute;
                 top: 0;
                 margin-top: 50px;
@@ -61,8 +60,10 @@
                     height: 0;
 
                     width: 100%;
-                    color: white;
                     background-color: #222;
+                    a{
+                        color: white;
+                    }
                 }
 
                 li:not(:last-child) {

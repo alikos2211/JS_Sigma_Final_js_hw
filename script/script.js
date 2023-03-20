@@ -26,6 +26,7 @@ function setupWhatWeDoSectionMenu(items) {
         parent.appendChild(menuItem);
     });
 
+    // This is removed because page will be scrolled to block because of focus
     // selectWhatWeDoAllSection();
 }
 
@@ -321,10 +322,10 @@ window.onload = () => {
     setupWeather();
     setupTestimonialsCarousel();
     setupForm();
-    // setupLoader();
+    setupLoader();
     setupLatestReveal();
 
-    // setupIdleTimer();
+    setupIdleTimer();
 }
 
 function setupIdleTimer() {

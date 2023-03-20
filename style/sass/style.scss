@@ -7,10 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 @media (max-width: 1920px) {
-    .loader {
-        display: none;
-    }
-
     #menu-toggle {
         display: none;
     }
@@ -965,6 +961,7 @@
         align-items: center;
         padding: 0 $space-s;
         gap: $space-xxs;
+
         #logo {
             width: 150px;
             height: 47px;
@@ -1004,56 +1001,67 @@
             grid-column: 2;
             grid-row: 6;
         }
-        #but{
+
+        #but {
             grid-column: 1;
             grid-row: 2;
         }
-        #about-our{
+
+        #about-our {
             grid-column: 2;
             grid-row: 2;
         }
-        #company{
+
+        #company {
             grid-column: 3;
             grid-row: 1;
         }
-        #about-company{
+
+        #about-company {
             grid-column: 3;
             grid-row: 2;
         }
-        #our-testimonials{
+
+        #our-testimonials {
             grid-column: 3;
             grid-row: 3;
         }
-        #contactUs{
+
+        #contactUs {
             grid-column: 4;
             grid-row: 1;
         }
-        #Sagrada{
+
+        #Sagrada {
             grid-column: 4;
             grid-row: 2;
         }
-        #Street{
+
+        #Street {
             grid-column: 4;
             grid-row: 3;
         }
-        #brandoxide{
+
+        #brandoxide {
             grid-column: 4;
             grid-row: 4;
         }
-        #phone{
+
+        #phone {
             grid-column: 4;
             grid-row: 5;
         }
-        #follow{
+
+        #follow {
             grid-column: 5;
             grid-row: 1;
         }
 
         h3 {
             color: $color-bold;
-        } 
+        }
     }
-   
+
     .socials {
         grid-column: 5;
         grid-row: 2;

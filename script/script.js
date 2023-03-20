@@ -56,7 +56,7 @@ function createWhatWeDoMenuItem(info, id) {
 }
 
 function setupWhatWeDoSectionGrid(data) {
-    const parent = document.querySelector('#block-what-we-do-bottom');
+    const parent = document.querySelector('#block-block-what-we-do-bottom');
 
     data.forEach(category => {
         const section = createWhatWeDoGridSection(category);
@@ -81,6 +81,7 @@ function createWhatWeDoGridSection(sectionInfo) {
 function createWhatWeDoGridBlock(obj) {
     const element = document.createElement('div');
     element.classList.add('what-we-do-card');
+    element.classList.add('card');
 
     const img = document.createElement('img');
     img.src = obj.img;
@@ -116,11 +117,12 @@ function setupSmoothScroll() {
 }
 
 function scrollWhatWeDoSectionToSection(id) {
-    const carousel = document.querySelector('#block-what-we-do-bottom');
+    const carousel = document.querySelector('#block-block-what-we-do-bottom');
     const slide = document.querySelector('.what-we-do-section');
 
     const slidesPadding = parseInt(getComputedStyle(carousel).getPropertyValue("padding"), 10);
-    const scrollAmount = slide.clientWidth + slidesPadding;
+    const slidesGap = parseInt(getComputedStyle(carousel).getPropertyValue("gap"), 10);
+    const scrollAmount = slide.clientWidth + slidesPadding + slidesGap;
 
     carousel.scrollLeft = scrollAmount * id;
 }
@@ -177,7 +179,6 @@ function setupTestimonialsCarousel() {
 
     const maxScroll = carousel.scrollWidth - carousel.clientWidth;
 
-    // TODO: add cycle scroll
     prevButton.addEventListener('click', () => {
         if (carousel.scrollLeft <= 0) {
             carousel.scrollLeft = maxScroll;
@@ -320,7 +321,7 @@ window.onload = () => {
     setupWeather();
     setupTestimonialsCarousel();
     setupForm();
-    setupLoader();
+    // setupLoader();
     setupLatestReveal();
 
     // setupIdleTimer();

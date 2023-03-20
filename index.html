@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="style/dist/style.css">
     <script src="script/script.js"></script>
-
 </head>
 
 <body>
@@ -32,11 +31,16 @@
             </div>
         </div>
     </div>
+
     <div class="block block-header">
         <div class="header-main">
             <div class="header__logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
             <div class="header__nav-bar">
                 <nav>
                     <ul class="menu__box">
@@ -74,13 +78,16 @@
         </div>
     </div>
 
-    <div class="block block-what-we-do-top" id="services">
-        <h3>What we do</h3>
-        <h1>Our Service </h1>
-        <div class="what-we-do__buttons" id="what-we-do-menu">
+    <div class="block block-what-we-do">
+        <div class="block-what-we-do-top" id="services">
+            <h3>What we do</h3>
+            <h1>Our Service </h1>
+            <div class="what-we-do__buttons" id="what-we-do-menu">
+            </div>
         </div>
+
+        <div class="block-what-we-do-bottom" id="block-block-what-we-do-bottom"></div>
     </div>
-    <div class="block what-we-do-bottom" id="block-what-we-do-bottom"></div>
 
     <div class="block block-about-us" id="about">
         <div class="about-us-left">
@@ -157,6 +164,7 @@
             </div>
         </div>
     </div>
+
     <div class="block block-testimonials" id="block-testimonials">
         <div class="testimonials-text">
             <h3>TESTIMONIALS</h3>
